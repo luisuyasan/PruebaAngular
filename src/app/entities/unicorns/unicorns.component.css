@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+  }
+
+.content{
+  background-color: lightseagreen;
+  padding:10px;
+}
+
+.mat-dialog-title{
+  margin: 8px;
+}
+
+.text-secondary{
+  margin: 0 0 0 300px;
+}
+
+h2{
+  margin: 0px;
+}
+
+.cardSubView{
+  margin-top: 20px !important;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cardContView{
+  font-size: large;
+}
+
+.butonViewUpdate{
+  cursor: pointer;
+}
+
+.buttonVEB{
+  margin: 10px;
+}

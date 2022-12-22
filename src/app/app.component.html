@@ -1,0 +1,24 @@
+<!-- 
+<div class="content">
+    <div class="container-header">
+      <header>
+        <nav class="eti-nav">
+           <ul>
+               <li class="liStyle"><a routerLink="welcome">Inicio</a></li>
+               <li class="liStyle"><a routerLink="unicorns">Unicorns</a></li>
+               <li class="liStyle"><a (click)="logout()" mat-button>login</a></li>
+           </ul>
+        </nav>
+      </header>
+     </div>
+   </div> -->
+
+    <mat-toolbar class="container-header" *ngIf="isAuthenticated()">
+      <a class="liStyle" routerLink="welcome" mat-button>Inicio</a>
+      <a class="liStyle" routerLink="unicorns" mat-button>Unicorns</a>
+      <a class="liStyle" (click)="logout()" mat-button>Logout</a>
+    </mat-toolbar>
+   <router-outlet></router-outlet>
+
+
+  

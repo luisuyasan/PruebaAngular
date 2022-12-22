@@ -1,0 +1,13 @@
+.container-header{
+    background-color: lightseagreen;
+    padding: 10px;
+}
+.liStyle{
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    font: menu;
+    font-size:medium;
+    margin-right: 40px;
+    cursor: pointer;
+}

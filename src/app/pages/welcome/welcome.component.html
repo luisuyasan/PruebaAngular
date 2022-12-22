@@ -1,0 +1,24 @@
+
+<mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>{{name}}</mat-card-title>
+      <mat-card-subtitle>{{Ocupation}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="./assets/photo.png" alt="PhotoProfile">
+    <mat-card-content>
+      <p>
+        {{Title}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <mat-text-column name="nombre"></mat-text-column>
+    <mat-text-column name="edad"></mat-text-column>
+    <mat-text-column name="is"></mat-text-column>
+    <mat-text-column name="ciudad"></mat-text-column>
+    <mat-text-column name="estado"></mat-text-column>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

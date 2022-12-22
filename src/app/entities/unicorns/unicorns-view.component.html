@@ -1,0 +1,21 @@
+<div class="content" fxLayout="row" fxLayout="start center" mat-dialog-title>
+ <h2 class="title m-0" fxflex="auto">{{unicorn?.name}}</h2>
+<button class="text-secondary" mat-dialog-close mat-icon-buton type="button">
+    <mat-icon>close</mat-icon>
+</button>
+</div>
+<mat-divider class="mx-6 text-border"></mat-divider>
+<mat-dialog-content class="my-6" fxLayout="column">
+<mat-card class="exampled-card">
+    <mat-card-title>{{unicorn?.name}}</mat-card-title>
+    <mat-card-subtitle class="cardSubView">{{unicorn?.age}}</mat-card-subtitle>
+    <mat-card-content class="cardContView">
+        <p>{{unicorn?.colour}}</p>
+    </mat-card-content>
+   </mat-card>
+</mat-dialog-content>
+
+<mat-divider class="mx-g text-border"></mat-divider>
+<mat-dialog-actions align="end">
+    <buton class="butonViewUpdate"  cdkFocusInitial color="warn" mat-button mat-dialog-close type="button">Cerrar</buton>
+</mat-dialog-actions>
